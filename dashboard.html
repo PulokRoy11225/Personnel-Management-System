@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Design</title>
+  <link rel="icon" href="./Images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="sidebar bg-cyan-500">
+    <div class="logo">
+      <ul class="menu">
+        <li class="active">
+          <a href="#">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span>Employee</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-money-check-dollar"></i>
+            <span>Payroll</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Tasks</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Calender</span>
+          </a>
+        </li>
+        <li class="logout">
+          <a href="#">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- main content begins -->
+  <div class="main--content">
+    <div class="header--wrapper">
+      <div class="header--title text-black">
+        <span>Primary</span>
+        <h2 class="text-cyan-500 text-3xl font-bold">Dashboard</h2>
+      </div>
+      <div class="user--info">
+        <div class="search--box">
+        <i class="fa-solid fa-search ml-4"></i>
+        <input type="text" placeholder="Search"/>
+      </div>
+      <img src="./Images/img1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="card--container">
+      <h3 class="main--title font-bold">Manage Employee</h3>
+      <div class="card--wrapper">
+          <div class="payment--card light-red">
+            <div class="flex flex-column justify-between">
+              <div>
+                <i class="fas fa-users icon bg-cyan-500 mt-7 shadow-2xl shadow-cyan-500"></i>
+              </div>
+              <div class="amount text-black mt-7 mr-8">
+                <span class="title">
+                  Total Employee </span><br>
+                  <span class="amount--value">
+                    192 
+                  </span>
+              </div>
+                <!-- <div class="card--hearder">
+              </div> -->
+                <!-- <span class="card-detail">**** **** **** 3484</span> -->
+            </div>
+          </div>
+          <div class="payment--card light-purple">
+            <div class="flex flex-column justify-between">
+              <div>
+                <i class="fa-solid fa-user-check icon bg-lime-500 mt-7 shadow-2xl shadow-lime-900"></i>
+              </div>
+              <div class="amount text-black mt-7 mr-8">
+                <span class="title">
+                  Active Employee </span><br>
+                  <span class="amount--value">
+                    181 
+                  </span>
+              </div>
+                <!-- <div class="card--hearder">
+              </div> -->
+                <!-- <span class="card-detail">**** **** **** 3484</span> -->
+            </div>
+          </div>
+          <div class="payment--card light-green">
+            <div class="flex flex-column justify-between">
+              <div>
+                <i class="fa-solid fa-user-injured icon bg-fuchsia-600 mt-7 shadow-2xl shadow-fuchsia-900"></i>
+              </div>
+              <div class="amount text-black mt-7 mr-8">
+                <span class="title">
+                  On Leave </span><br>
+                  <span class="amount--value">
+                    17 
+                  </span>
+              </div>
+                <!-- <div class="card--hearder">
+              </div> -->
+                <!-- <span class="card-detail">**** **** **** 3484</span> -->
+            </div>
+          </div>
+          <div class="payment--card light-blue">
+            <div class="flex flex-column justify-between">
+              <div>
+                <i class="fa-solid fa-building-user icon bg-purple-600 mt-7 shadow-2xl shadow-purple-900"></i>
+              </div>
+              <div class="amount text-black mt-7 mr-8">
+                <span class="title">
+                  Onboarding </span><br>
+                  <span class="amount--value">
+                    27 
+                  </span>
+              </div>
+                <!-- <div class="card--hearder">
+              </div> -->
+                <!-- <span class="card-detail">**** **** **** 3484</span> -->
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="tabular--wrapper">
+      <div class="search--box w-80 mb-4">
+        <i class="fa-solid fa-search ml-4"></i>
+        <input type="text" placeholder="Search employee"/>
+      </div>
+      <h3 class="main--title">Employee List</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Employee</th>
+              <th>Approver</th>
+              <th>Position</th>
+              <th>Team</th>
+              <th>Office</th> 
+              <th>Country</th>
+              <th>Action</th> 
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td class="flex flex-row"><img class="table--image" src="./Images/imgn1.jpg" alt=""><span class="mt-2 ml-2">Alex Cos</span></td>
+                <td>Jeremy Johnson</td>
+                <td>Personnel Management Specialist</td>
+                <td>Design</td>
+                <td>Barcelona</td>
+                <td>United States</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+                <td class="flex flex-row"><img class="table--image" src="./Images/imgn2.jpg" alt=""><span class="mt-2 ml-2">Bogdan LB</span></td>
+                <td>Jeremy Johnson</td>
+                <td>Business Developer</td>
+                <td>Human Resources</td>
+                <td>Shanghai</td>
+                <td>China</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+                <td class="flex flex-row"><img class="table--image" src="./Images/imgn3.jpg" alt=""><span class="mt-2 ml-2">Florian Kleinz</span></td>
+                <td>Judy Williams</td>
+                <td>Senior Marketing Manager</td>
+                <td>Development</td>
+                <td>Yangzhou</td>
+                <td>China</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+              <td class="flex flex-row"><img class="table--image" src="./Images/imgn6.jpg" alt=""><span class="mt-2 ml-2">Liviu Popescu</span></td>
+                <td>Liu Han</td>
+                <td>Recruiter</td>
+                <td>Development</td>
+                <td>Beijing</td>
+                <td>China</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+                <td class="flex flex-row"><img class="table--image" src="./Images/imgn4.jpg" alt=""><span class="mt-2 ml-2">Frank Roosevelt</span></td>
+                <td>Liu Han</td>
+                <td>Recruiter</td>
+                <td>Development</td>
+                <td>Barcelona</td>
+                <td>United States</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+                <td class="flex flex-row"><img class="table--image" src="./Images/imgn7.jpg" alt=""><span class="mt-2 ml-2">Alexander Suhorucov</span></td>
+                <td>Lulia Cristescu</td>
+                <td>Head of Content</td>
+                <td>Design</td>
+                <td>New York</td>
+                <td>United States</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+                <td class="flex flex-row"><img class="table--image" src="./Images/imgn5.jpg" alt=""><span class="mt-2 ml-2">Hugo Melo</span></td>
+                <td>Bogdan LB</td>
+                <td></td>
+                <td>Human Resources</td>
+                <td>Netherlands</td>
+                <td>Belgium</td>
+                <td><button>Edit</button></td>
+              </tr>
+            </tbody>
+            <tfoot><tr><td colspan="7">Total: $1000</td></tr></tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
