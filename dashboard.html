@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Design</title>
-  <link rel="icon" href="./Images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="./Images/Blue_Elegan.png" type="image/x-icon">
   <link rel="stylesheet" href="./styles/dashboard.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -21,21 +21,24 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="alexcos.html">
             <i class="fa-solid fa-user"></i>
             <span>Employee</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="fa-solid fa-money-check-dollar"></i>
-            <span>Payroll</span>
-          </a>
+          
+          
+            <a href="payroll.html">
+              <i class="fa-solid fa-money-check-dollar"></i>
+              <span id="payroll-page">Payroll</span>
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <a href="reports.html">
             <i class="fa-regular fa-file-lines"></i>
-            <span>Reports</span>
+            <span id="report-stat">Reports</span>
           </a>
         </li>
         <li>
@@ -73,7 +76,7 @@
         <i class="fa-solid fa-search ml-4"></i>
         <input type="text" placeholder="Search"/>
       </div>
-      <img src="./Images/img1.jpg" alt="">
+      <img src="./Images/Blue Elegant Concept Foundation Logo.png" alt="">
       </div>
     </div>
 
@@ -236,10 +239,26 @@
                 <td><button>Edit</button></td>
               </tr>
             </tbody>
-            <tfoot><tr><td colspan="7">Total: $1000</td></tr></tfoot>
+            <tfoot>
+              <!-- <tr><td colspan="7">Total Employee: 192</td> -->
+                <th>Total Employee : 192</th>
+                <!-- <th>Add Employee</th>
+                <th>Add Employee</th>
+                <th>Add Employee</th>
+                <th>Add Employee</th>
+                <th>Add Employee</th> -->
+                <th colspan="6" class="justify-items-end"><a href="addemp.html"><button>Add Employee</button></a>
+                </th>
+              </tr>
+             
+            </tfoot>
         </table>
       </div>
+      
     </div>
   </div>
+  
+  <script src="./Server/index.js"></script>
+  <!-- <link src="./Server/index.js"></link> -->
 </body>
 </html>

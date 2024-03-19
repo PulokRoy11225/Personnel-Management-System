@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Employee</title>
+  <link rel="icon" href="./Images/Blue_Elegan.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .wrapper{
+  width: 600px;
+  padding: 2rem 0 1rem 0;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  /* text-align: center; */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body>
+  <section>
+    <div class="bg-violet-600  mt-10 p-4 rounded-lg text-black wrapper">
+      <h3 class="text-3xl mb-4 font-semibold">Employee Details Form</h3>
+      <p class="mb-4">Please fill out the form below with your details.</p>
+      <div class="flex space-between">
+        <div>
+          <p class="">First Name</p>
+          <input type="text" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs mb-4 mr-8" />
+        </div>
+        <div><p class="ml-4">Last Name</p>
+          <input type="text" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs mb-4 ml-4 mr-8" />
+          </div>
+        </div>
+        <p>Email Address</p>
+        <input type="text" placeholder="Enter Your Email" class="input input-bordered input-info w-full max-w-xs" />
+  
+        <div class="flex space-between">
+          <div>
+            <p class="">Phone Number</p>
+            <input type="text" placeholder="Enter your phone number" class="input input-bordered input-info w-full max-w-xs" />
+          </div>
+          <div><p class="ml-4">Date of birth</p>
+            <input type="text" placeholder="Enter your date of birth" class="input input-bordered input-info w-full max-w-xs ml-4" />
+            </div>
+          </div>
+          <p>Position</p>
+          <input type="text" autocomplete="off" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs" />
+          <p>Address</p>
+          <input type="text" placeholder="Enter your full address" class="input input-bordered input-info w-full max-w-xs size-32" />
+
+        <div class="flex space-between">
+          <div>
+            <p class="">Years of Experience</p>
+            <input type="text" placeholder="Number of years" class="input input-bordered input-info w-full max-w-xs" />
+        <p>Please enter the number of years <br> you have been working in your field.</p></div>
+          <div><p class="ml-4">Department</p>
+            <input type="text" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs ml-4" /></div>
+          </div>
+          <p class="mt-2">Upload CV</p><p>Please upload your CV in pdf format.</p>
+          <input type="file" class="file-input file-input-bordered file-input-primary w-full max-w-xs mt-2 mb-4" />
+      <a href="alexcos.html"><button class='btn btn-primary rounded-0 mt-4 mb-4'>Add</button></a>
+      <div>
+        <input type="checkbox" name="tick" id="tick" />
+        <label htmlFor="password">I confirm that the above information is accurate and true to the best of my knowledge.</label>
+      </div>
+    </div>
+  </section>
+  <script src="./Server/index.js"></script>
+</body>
+</html>
